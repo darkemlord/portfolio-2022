@@ -258,6 +258,9 @@
 }
 
 @media (max-width: 630px) {
+  .nav-container {
+    height: 280px !important;
+  }
   .profile-container {
     .name-container {
       h1 {
@@ -267,7 +270,11 @@
   }
 
   .links {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
     .social{
+      margin-bottom: 0px !important;
       .svg-inline--fa {
         width: 37px !important;
         height: 37px !important;
@@ -275,6 +282,8 @@
     }
   }
   .link-navegator {
+    position: relative !important;
+    bottom: 20px !important;
     .nav-button {
       span {
         font-size: 14px !important;
