@@ -13,3 +13,11 @@
   grid-template-columns: 30% 70%;
   height: 100vh;
 }
+
+
+@media (max-width: 960px) {
+  .grid-division {
+    display: flex;
+    flex-direction: column;
+  }
+}
