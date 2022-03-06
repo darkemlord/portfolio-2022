@@ -1,24 +1,24 @@
 .background-image {
-  background-image: url('../assets/media/Vector_2646.jpg');
-  background-size: cover;
+  object-fit: cover;
+  width: 100%;
   height: 100vh;
   opacity: 50%;
 }
 
 @media (max-width: 1000px) {
   .background-image{
-    background-position: -200px;
+    position: -200px;
   }
 }
 
 @media (max-width: 800px) {
   .background-image{
-    background-position: -350px;
+    position: -350px;
   }
 }
 
 @media (max-width: 500px) {
   .background-image{
-    background-position: -550px;
+    position: -550px;
   }
 }

@@ -1,11 +1,11 @@
-import Background from "./Components/Background";
+import './App.scss'
+import background from './assets/media/Vector_2646.jpg';
+
 
 function App() {
   return (
     <div className="App">
-      <Background>
-
-      </Background>
+      <img className="background-image" src={background} alt="hello" />
     </div>
   );
 }
