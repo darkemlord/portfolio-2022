@@ -1,6 +1,10 @@
 @import './assets/styles/colors.scss';
 @import './assets/styles/fonts.scss';
 
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 body {
   background-color: $black;
   margin: 0;
