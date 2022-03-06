@@ -14,6 +14,18 @@
       margin-bottom: 0px;
       font-size: 35px;
     }
+    .avatar {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: solid 2px white;
+      img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
   }
 }
 
