@@ -17,9 +17,13 @@
       margin-top: 20px !important;
       font-size: 35px;
       }
-      h3 {
-      margin-top: 20px !important;
-      font-size: 20px;
+      .dev-cont {
+        display: flex;
+        flex-direction: column;
+        h3 {
+        margin-top: 10px !important;
+        font-size: 20px;
+        }
       }
     }
     .avatar {
@@ -39,14 +43,33 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
+    .social {
+      position: absolute;
+      left: 60px;
+      bottom: 78px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .svg-inline--fa{
+        width: 50px;
+        height: 50px;
+        margin-top: 30px !important;
+        color: $grey;
+          &:hover{
+            color: $purple;
+        }
+      }
+      .fa-martini-glass-citrus{
+    color: white;
+  }
+}
     .link-navegator {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       .nav-button {
-        margin-top: 10px !important;
-        margin-bottom: 15px !important;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -60,7 +83,37 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .profile-container{
+    .name-container{
+      margin-bottom: 15px !important;
+      h1 {
+        font-size: 23px !important;
+      }
+      .dev-cont {
+        h3 {
+          font-size: 15px !important;
+        }
+      }
+    }
 
+  }
+  .links{
+    .social{
+      left: 30px !important;
+      bottom: 50px !important;
+      .svg-inline--fa {
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
+    .link-navegator{
+      span {
+        font-size: 23px !important;
+      }
+    }
+  }
+}
 
 
 @media (max-width: 1200px) {
@@ -93,5 +146,27 @@
   }
   .profile-container {
     flex-direction: row-reverse !important;
+    justify-content: space-evenly !important;
+    margin-top: 20px !important;
+    .avatar {
+      position: absolute;
+      left: 60px;
+      top: 20px;
+      width: 150px !important;
+      height: 150px !important;
+  }
+  .name-container {
+    .dev-cont {
+      flex-direction: row !important;
+      h3 {
+        margin-left: 10px !important;
+      }
+    }
+  }
+  }
+  .link-navegator {
+    flex-direction: row !important;
+    margin-top: 120px !important;
+    justify-content: space-evenly !important;
   }
 }
