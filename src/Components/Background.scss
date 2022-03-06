@@ -1,3 +1,24 @@
 .background-image {
   border: solid white 2px;
+  background-image: url('../assets/media/Vector_2646.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  .background-image{
+    background-position: -200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .background-image{
+    background-position: -350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .background-image{
+    background-position: -550px;
+  }
 }
