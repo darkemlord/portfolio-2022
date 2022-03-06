@@ -181,6 +181,8 @@
   .link-navegator {
     flex-direction: row !important;
     justify-content: space-between !important;
+    position: relative !important;
+    bottom: 20px !important;
   }
 
   .links {
@@ -214,6 +216,8 @@
     }
   }
   .link-navegator {
+      position: relative !important;
+      bottom: 20px !important;
     .nav-button {
       span {
         font-size: 18px !important;
@@ -240,6 +244,8 @@
     }
   }
   .link-navegator {
+    position: relative !important;
+    bottom: 20px !important;
     .nav-button {
       span {
         font-size: 16px !important;
@@ -254,6 +260,16 @@
       width: 110px !important;
       height: 110px !important;
       left: 60px !important;
+    }
+  }
+
+  .link-navegator {
+    position: relative !important;
+    bottom: 20px !important;
+    .nav-button {
+      span {
+        font-size: 14px !important;
+      }
     }
   }
 }
@@ -291,5 +307,40 @@
       }
     }
   }
+}
 
+@media (max-width: 600px) {
+  .profile-container {
+    .avatar {
+      left: 45px !important;
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+  .links {
+    .link-navegator {
+      bottom: 30px !important;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .profile-container {
+    .avatar {
+      left: 35px !important;
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+  .links {
+    .link-navegator {
+      bottom: 40px !important;
+    }
+    .social {
+      .svg-inline--fa {
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
+  }
 }
