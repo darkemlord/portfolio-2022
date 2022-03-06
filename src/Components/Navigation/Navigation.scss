@@ -68,11 +68,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
+      margin: auto !important;
       .nav-button {
+        height: 4rem !important;
+        width: 100% !important;
         background-color: transparent;
         border: none;
         cursor: pointer;
+        &:hover {
+          border-radius: 30px;
+          background: radial-gradient(circle, rgba(215,166,255,0.3) 0%, rgba(229,229,229,0.1) 100%);
+          width: 120% !important;
+        }
       }
       span {
         color: $grey;
