@@ -1,0 +1,15 @@
+@import './assets/styles/colors.scss';
+@import './assets/styles/fonts.scss';
+
+body {
+  background-color: $black;
+  margin: 0;
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $bruno;
+    color: $grey;
+  }
+  p {
+    font-family: $share;
+    color: $grey;
+  }
+}
