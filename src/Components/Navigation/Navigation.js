@@ -11,6 +11,14 @@ const Navigation = () => {
           <img src={emanuel} alt="" />
         </div>
       </div>
+      <div className="links">
+        <div className="social">
+
+        </div>
+        <div className="link-navegator">
+
+        </div>
+      </div>
     </div>
   )
 }
