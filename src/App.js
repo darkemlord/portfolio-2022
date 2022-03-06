@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <img className="background-image" src={background} alt="hello" />
-      <h1>hello papi</h1>
+      <div className="grid-division">
+
+      </div>
     </div>
   );
 }
