@@ -1,5 +1,6 @@
-import "./Navigation.scss";
-import emanuel from "../../assets/media/emanuels.png";
+import "./Navigation.scss"
+import emanuel from "../../assets/media/emanuels.png"
+
 
 const Navigation = () => {
   return (

@@ -28,9 +28,13 @@
     }
   }
   .links {
+    width: 100%;
     display: flex;
+    border: solid 2px white;
     .social {
-
+      .fa-martini-glass-citrus{
+        color: white;
+      }
     }
     .links-navegator {
 
