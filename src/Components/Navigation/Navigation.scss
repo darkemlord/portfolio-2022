@@ -256,3 +256,30 @@
     }
   }
 }
+
+@media (max-width: 630px) {
+  .profile-container {
+    .name-container {
+      h1 {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  .links {
+    .social{
+      .svg-inline--fa {
+        width: 37px !important;
+        height: 37px !important;
+      }
+    }
+  }
+  .link-navegator {
+    .nav-button {
+      span {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+}
