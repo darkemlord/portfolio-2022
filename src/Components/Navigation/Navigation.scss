@@ -15,13 +15,13 @@
       font-size: 35px;
     }
     .avatar {
-      width: 250px;
-      height: 250px;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
-      border: solid 2px white;
+      border: 5px dashed $grey;
       img{
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 50%;
       }
