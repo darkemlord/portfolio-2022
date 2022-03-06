@@ -246,3 +246,13 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .profile-container {
+    .avatar {
+      width: 110px !important;
+      height: 110px !important;
+      left: 60px !important;
+    }
+  }
+}
