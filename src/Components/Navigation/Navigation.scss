@@ -41,8 +41,17 @@
         color: white;
       }
     }
-    .links-navegator {
-
+    .link-navegator {
+      .nav-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      span {
+        color: $grey;
+        font-family: $bruno;
+        font-size: 30px;
+      }
     }
   }
 }

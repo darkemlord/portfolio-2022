@@ -20,6 +20,10 @@ const Navigation = () => {
           <i className="fa-brands fa-linkedin"></i>
         </div>
         <div className="link-navegator">
+          <button className="nav-button"><span>About Me</span></button>
+          <button className="nav-button"><span>Skills</span></button>
+          <button className="nav-button"><span>My projects</span></button>
+          <button className="nav-button"><span>Contact Me</span></button>
         </div>
       </div>
     </div>
