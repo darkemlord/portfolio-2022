@@ -8,6 +8,7 @@
 }
 
 .grid-division {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 70%;
   height: 100vh;
 }
