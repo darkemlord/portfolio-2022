@@ -189,10 +189,18 @@
         left: 0px !important;
         flex-direction: row !important;
         justify-content: center !important;
-      .svg-inline--fa{
-        width: 50px !important;
-        height: 50px !important;
-        margin-right: 20px !important;
+        .svg-inline--fa{
+          width: 50px !important;
+          height: 50px !important;
+          margin-right: 20px !important;
+        }
+    }
+    .link-navegator {
+      span {
+        font-size: 20px !important;
+        &:hover {
+          padding: 0 !important;
+        }
       }
     }
   }
@@ -201,15 +209,40 @@
 @media  (max-width: 770px) {
   .profile-container {
     .avatar {
-      left: 40px !important;
+      left: 35px !important;
+    }
+  }
+  .link-navegator {
+    .nav-button {
+      span {
+        font-size: 18px !important;
+      }
     }
   }
 }
 
 @media  (max-width: 700px) {
   .profile-container {
-    .avatar {
-      left: 40px !important;
+    .name-container {
+      h1 {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  .links {
+    .social{
+      .svg-inline--fa {
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
+  }
+  .link-navegator {
+    .nav-button {
+      span {
+        font-size: 16px !important;
+      }
     }
   }
 }
