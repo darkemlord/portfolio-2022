@@ -1,5 +1,6 @@
 @import '../../index.scss';
 .content {
+  margin-top: -10px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +9,16 @@
     height: 90%;
     background-color: rgba(229, 229, 229, 0.15);
     border-radius: 30px;
+    .content-bg {
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      border-radius: 30px;
+      background-image: url('../../assets/media/stars-star.gif');
+      background-size: 400px;
+      opacity: 15%;
+      z-index: -1;
+    }
   }
 }
 
