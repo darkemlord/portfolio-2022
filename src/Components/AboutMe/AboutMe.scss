@@ -1,1 +1,23 @@
 @import '../../index.scss';
+
+.about-container {
+  height: 70%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+  p {
+    padding: 10px 200px 0px 200px !important;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 1600px) {
+  .about-container {
+    p {
+      padding: 10px 100px 0px 100px !important;
+      font-size: 25px;
+    }
+  }
+}

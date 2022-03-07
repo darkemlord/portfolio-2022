@@ -1,6 +1,7 @@
 import ContentBox from '../ContentBox'
 import './Content.scss'
 
+
 const Content = (props) => {
   const { title } = props
   return (
