@@ -47,7 +47,7 @@
     .social {
       position: absolute;
       left: 60px;
-      bottom: 78px;
+      bottom: 10%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -111,7 +111,7 @@
   .links{
     .social{
       left: 30px !important;
-      bottom: 50px !important;
+      bottom: 12% !important;
       .svg-inline--fa {
         width: 30px !important;
         height: 30px !important;
@@ -137,6 +137,21 @@
     }
     span {
       font-size: 25px !important;
+    }
+  }
+  .links{
+    .social{
+      left: 30px !important;
+      bottom: 8% !important;
+      .svg-inline--fa {
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
+    .link-navegator{
+      span {
+        font-size: 23px !important;
+      }
     }
   }
 }
