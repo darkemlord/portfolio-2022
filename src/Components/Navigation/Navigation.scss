@@ -335,11 +335,139 @@
   .links {
     .link-navegator {
       bottom: 40px !important;
+      .nav-button {
+        span {
+          font-size: 13.5px !important;
+          &:hover {
+            padding: 10px !important;
+        }
+        }
+      }
     }
     .social {
       .svg-inline--fa {
         width: 30px !important;
         height: 30px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-container {
+    .avatar {
+      left: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .profile-container {
+    .name-container {
+      h1 {
+        font-size: 15px !important;
+      }
+      .dev-cont {
+        h3 {
+          font-size: 10px !important;
+          margin-right: 0px !important;
+          margin-left: 5px !important;
+        }
+      }
+    }
+    .avatar {
+      left: 25px !important;
+      width: 80px !important;
+      height: 80px !important;
+    }
+  }
+  .links {
+    .social {
+      .svg-inline--fa {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
+    .link-navegator {
+      .nav-button {
+        span {
+        font-size: 11px !important;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .profile-container {
+    .avatar {
+      left: 15px !important;
+    }
+  }
+
+  .nav-container{
+    .links {
+      .link-navegator {
+        justify-content: center !important;
+        .nav-button {
+          height: 3rem !important;
+
+          span {
+            font-size: 10.5px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 387px) {
+  .nav-container{
+    .links {
+      .link-navegator {
+        .nav-button {
+          span {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 370px) {
+  .nav-container{
+    .profile-container {
+      .avatar {
+        top: 20px !important
+      }
+    }
+    .links {
+      .social {
+        position: relative !important;
+        bottom: 60px !important;
+      }
+      .link-navegator {
+        top: -50px !important;
+        .nav-button {
+          span {
+            font-size: 9px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 345px) {
+  .nav-container{
+    .links {
+      .link-navegator {
+        .nav-button {
+          span {
+            font-size: 8.5px !important;
+          }
+        }
       }
     }
   }
