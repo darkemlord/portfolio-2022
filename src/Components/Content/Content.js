@@ -1,18 +1,16 @@
-import { useState} from 'react'
 import ContentBox from '../ContentBox'
 import './Content.scss'
 
-const Content = () => {
-  const [title, setTitle] = useState('About me');
-
+const Content = (props) => {
+  const { title } = props
   return (
-    <div className="content">
-      <div className="content-container">
-        <div className="content-bg">
-          <ContentBox name={title} />
+      <div className="content">
+        <div className="content-container">
+          <div className="content-bg">
+            <ContentBox name={title} />
+          </div>
         </div>
       </div>
-    </div>
   )
 }
 

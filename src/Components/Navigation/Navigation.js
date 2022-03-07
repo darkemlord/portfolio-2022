@@ -1,7 +1,24 @@
 import "./Navigation.scss"
 import emanuel from "../../assets/media/emanuels.png"
 
-const Navigation = () => {
+const Navigation = (props) => {
+  const { titlechange } = props
+
+  const handleAboutClick = () => {
+    titlechange('About me');
+  }
+
+  const handleSkillClick = () => {
+    titlechange('Skills');
+  }
+
+  const handleProjectsClick = () => {
+    titlechange('My Projects');
+  }
+
+  const handleContactMe = () => {
+    titlechange('Contact me');
+  }
   return (
     <div className="nav-container">
       <div className="profile-container">
@@ -25,10 +42,10 @@ const Navigation = () => {
         </div>
 
         <div className="link-navegator">
-          <button className="nav-button"><span>About Me</span></button>
-          <button className="nav-button"><span>Skills</span></button>
-          <button className="nav-button"><span>My projects</span></button>
-          <button className="nav-button"><span>Contact Me</span></button>
+          <button onClick={handleAboutClick} className="nav-button"><span>About Me</span></button>
+          <button onClick={handleSkillClick} className="nav-button"><span>Skills</span></button>
+          <button onClick={handleProjectsClick} className="nav-button"><span>My projects</span></button>
+          <button onClick={handleContactMe} className="nav-button"><span>Contact Me</span></button>
         </div>
       </div>
     </div>
