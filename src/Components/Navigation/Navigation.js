@@ -1,7 +1,6 @@
 import "./Navigation.scss"
 import emanuel from "../../assets/media/emanuels.png"
 
-
 const Navigation = () => {
   return (
     <div className="nav-container">
