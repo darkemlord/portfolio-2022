@@ -11,21 +11,73 @@
     border-radius: 30px;
     .content-bg {
       position: absolute;
-      width: 90%;
-      height: 90%;
+      width: 63%;
+      height: 91%;
       border-radius: 30px;
-      background-image: url('../../assets/media/stars-star.gif');
-      background-size: 400px;
+      background-color: red;
       opacity: 15%;
       z-index: -1;
     }
   }
 }
 
-
 // MOBILE VERSION
 @media (max-width: 960px) {
   .content {
     height: 100%;
+    .content-container {
+      .content-bg {
+        width: 90%;
+        height: 57%;
+     }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    height: 100%;
+    .content-container {
+      .content-bg {
+        width: 90%;
+        height: 59.5%;
+     }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .content {
+    height: 100%;
+    .content-container {
+      .content-bg {
+        width: 90%;
+        height: 61.8%;
+     }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .content {
+    height: 100%;
+    .content-container {
+      .content-bg {
+        width: 90%;
+        height: 65%;
+     }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    height: 100%;
+    .content-container {
+      .content-bg {
+        width: 90%;
+        height: 67%;
+     }
+    }
   }
 }

@@ -5,7 +5,7 @@ const Content = () => {
     <div className="content">
       <div className="content-container">
         <div className="content-bg"></div>
-        <h1>hola amigos</h1>
+        {/* <h1>hola amigos</h1> */}
       </div>
     </div>
   )
