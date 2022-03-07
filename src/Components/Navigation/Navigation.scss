@@ -146,6 +146,7 @@
     width: 100%;
   }
 }
+//HERE STARTS THE MOBILE VERSION
 
 @media (max-width: 960px) {
   .nav-container {
@@ -325,29 +326,32 @@
 }
 
 @media (max-width: 550px) {
-  .profile-container {
-    .avatar {
-      left: 35px !important;
-      width: 100px !important;
-      height: 100px !important;
-    }
-  }
-  .links {
-    .link-navegator {
-      bottom: 50px !important;
-      .nav-button {
-        span {
-          font-size: 13.5px !important;
-          &:hover {
-            padding: 10px !important;
-        }
-        }
+  .nav-container {
+    height: 250px !important;
+    .profile-container {
+      .avatar {
+        left: 35px !important;
+        width: 100px !important;
+        height: 100px !important;
       }
     }
-    .social {
-      .svg-inline--fa {
-        width: 30px !important;
-        height: 30px !important;
+    .links {
+      .link-navegator {
+        bottom: 50px !important;
+        .nav-button {
+          span {
+            font-size: 13.5px !important;
+            &:hover {
+              padding: 10px !important;
+            }
+          }
+        }
+      }
+      .social {
+        .svg-inline--fa {
+          width: 30px !important;
+          height: 30px !important;
+        }
       }
     }
   }
@@ -362,38 +366,41 @@
 }
 
 @media (max-width: 450px) {
-  .profile-container {
-    .name-container {
-      h1 {
-        font-size: 15px !important;
-      }
-      .dev-cont {
-        h3 {
-          font-size: 10px !important;
-          margin-right: 0px !important;
-          margin-left: 5px !important;
+  .nav-container {
+    height: 230px !important;
+    .profile-container {
+      .name-container {
+        h1 {
+          font-size: 15px !important;
+        }
+        .dev-cont {
+          h3 {
+            font-size: 10px !important;
+            margin-right: 0px !important;
+            margin-left: 5px !important;
+          }
         }
       }
-    }
-    .avatar {
-      left: 25px !important;
-      width: 80px !important;
-      height: 80px !important;
-    }
-  }
-  .links {
-    .social {
-      position: relative !important;
-      bottom: 50px !important;
-      .svg-inline--fa {
-        width: 25px !important;
-        height: 25px !important;
+      .avatar {
+        left: 25px !important;
+        width: 80px !important;
+        height: 80px !important;
       }
     }
-    .link-navegator {
-      .nav-button {
-        span {
-        font-size: 11px !important;
+    .links {
+      .social {
+        position: relative !important;
+        bottom: 50px !important;
+        .svg-inline--fa {
+          width: 25px !important;
+          height: 25px !important;
+        }
+      }
+      .link-navegator {
+        .nav-button {
+          span {
+            font-size: 11px !important;
+          }
         }
       }
     }

@@ -1,0 +1,20 @@
+@import '../../index.scss';
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content-container {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(229, 229, 229, 0.15);
+    border-radius: 30px;
+  }
+}
+
+
+// MOBILE VERSION
+@media (max-width: 960px) {
+  .content {
+    height: 100%;
+  }
+}
