@@ -195,7 +195,7 @@
         .svg-inline--fa{
           width: 50px !important;
           height: 50px !important;
-          margin-right: 20px !important;
+          margin: 10px 10px 10px 10px !important;
         }
     }
     .link-navegator {
@@ -334,7 +334,7 @@
   }
   .links {
     .link-navegator {
-      bottom: 40px !important;
+      bottom: 50px !important;
       .nav-button {
         span {
           font-size: 13.5px !important;
@@ -383,6 +383,8 @@
   }
   .links {
     .social {
+      position: relative !important;
+      bottom: 50px !important;
       .svg-inline--fa {
         width: 25px !important;
         height: 25px !important;
@@ -416,6 +418,10 @@
             font-size: 10.5px !important;
           }
         }
+      }
+      .social {
+        position: relative !important;
+        bottom: 60px !important;
       }
     }
   }
@@ -486,6 +492,19 @@
         top: 30px !important;
         height: 60px !important;
         width: 60px !important;
+      }
+    }
+
+    .links {
+      .link-navegator {
+        .nav-button {
+          span {
+            font-size: 8.5px !important;
+            &:hover {
+              padding: 4px !important;
+            }
+          }
+        }
       }
     }
   }
