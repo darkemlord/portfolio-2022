@@ -461,6 +461,12 @@
 
 @media(max-width: 345px) {
   .nav-container{
+    .profile-container {
+      .avatar {
+        height: 70px !important;
+        width: 70px !important;
+      }
+    }
     .links {
       .link-navegator {
         .nav-button {
@@ -468,6 +474,40 @@
             font-size: 8.5px !important;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .nav-container {
+    .profile-container {
+      .avatar {
+        top: 30px !important;
+        height: 60px !important;
+        width: 60px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .nav-container {
+    .profile-container {
+      .avatar {
+        top: 35px !important;
+        height: 50px !important;
+        width: 50px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .nav-container {
+    .profile-container {
+      .avatar {
+        display: none;
       }
     }
   }
