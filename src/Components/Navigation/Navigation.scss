@@ -460,6 +460,11 @@
 
 @media(max-width: 387px) {
   .nav-container{
+    .profile-container {
+      .avatar {
+        top: 30px;
+      }
+    }
     .links {
       .link-navegator {
         .nav-button {

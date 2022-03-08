@@ -123,13 +123,19 @@
       padding: 0px 55px 0px 55px !important;
       font-size: 16px;
     }
+    .button-container {
+      .button-download {
+        font-size: 14px;
+        height: 35px;
+        width: 200px;
+      }
+    }
   }
 }
 
 @media(max-width: 500px) {
   .about-container {
     p {
-      margin-top: 0px !important;
       padding: 0px 55px 0px 55px !important;
       font-size: 14.5px;
       overflow: scroll;
@@ -147,9 +153,8 @@
 @media(max-width: 400px) {
   .about-container {
     p {
-      margin-top: 0px !important;
       padding: 0px 50px 0px 50px !important;
-      font-size: 11.5px;
+      font-size: 12.5px;
     }
     .button-container{
       .button-download{
