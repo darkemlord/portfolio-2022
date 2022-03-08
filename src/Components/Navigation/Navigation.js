@@ -5,7 +5,7 @@ const Navigation = (props) => {
   const { titlechange } = props
 
   const handleAboutClick = () => {
-    titlechange('About me');
+    titlechange('About Me');
   }
 
   const handleSkillClick = () => {
@@ -17,7 +17,7 @@ const Navigation = (props) => {
   }
 
   const handleContactMe = () => {
-    titlechange('Contact me');
+    titlechange('Contact Me');
   }
   return (
     <div className="nav-container">

@@ -2,7 +2,9 @@ import './Skills.scss'
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <div>
+      <h1>Sabrosas skills</h1>
+    </div>
   )
 }
 
