@@ -167,11 +167,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100% !important;
+    max-height: 100% !important;
+    position: relative;
       &:before {
       content: '';
       position: absolute;
-      height: 330px;
       background-image: url('../../assets/media/Vector_2646.jpg');
       background-size: 100% 100%;
       opacity: 50%;
@@ -214,7 +214,7 @@
   }
 
   .links {
-      margin-top: 50px !important;
+      margin-top: 30px !important;
       .social {
         position: relative !important;
         left: 0px !important;
@@ -224,7 +224,7 @@
         .svg-inline--fa{
           width: 50px !important;
           height: 50px !important;
-          margin: 10px 10px 10px 10px !important;
+          margin: 8px 8px 8px 8px !important;
         }
     }
     .link-navegator {
@@ -304,12 +304,6 @@
 }
 
 @media (max-width: 630px) {
-  .nav-container {
-    height: 280px !important;
-      &:before {
-        height: 268px;
-      }
-  }
   .profile-container {
     .name-container {
       h1 {
@@ -358,10 +352,6 @@
 
 @media (max-width: 550px) {
   .nav-container {
-    height: 250px !important;
-        &:before {
-        height: 235px;
-      }
     .profile-container {
       .avatar {
         left: 35px !important;
@@ -371,7 +361,7 @@
     }
     .links {
       .link-navegator {
-        bottom: 50px !important;
+        bottom: 40px !important;
         .nav-button {
           span {
             font-size: 13.5px !important;
@@ -401,7 +391,6 @@
 
 @media (max-width: 450px) {
   .nav-container {
-    height: 230px !important;
     .profile-container {
       .name-container {
         h1 {
@@ -451,6 +440,7 @@
   .nav-container{
     .links {
       .link-navegator {
+        bottom: 60px !important;
         justify-content: center !important;
         .nav-button {
           height: 3rem !important;

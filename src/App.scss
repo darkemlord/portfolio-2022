@@ -38,6 +38,8 @@
   }
 }
 
-@media (max-width: 960px) {
-
+@media (max-width: 500px) {
+  .grid-division {
+    grid-template-rows: 26% 74%;
+  }
 }
