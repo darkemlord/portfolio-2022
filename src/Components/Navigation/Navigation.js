@@ -23,15 +23,15 @@ const Navigation = (props) => {
     <div className="nav-container">
       <div className="profile-container">
         <div className="name-container">
-          <h1>Emanuel Caro</h1>
           <div className="dev-cont">
-            <h3>Software</h3>
-            <h3>Developer</h3>
+            <h1>Emanuel Caro</h1>
+            <h3>Software Developer</h3>
+          </div>
+          <div className="avatar">
+            <img src={emanuel} alt="" />
           </div>
         </div>
-        <div className="avatar">
-          <img src={emanuel} alt="" />
-        </div>
+
       </div>
       <div className="links">
         <div className="social">
