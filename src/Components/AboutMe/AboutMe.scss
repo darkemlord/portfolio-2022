@@ -61,7 +61,7 @@
 @media(max-width: 960px) {
   .about-container {
     p {
-      font-size: 25px;
+      font-size: 24px;
     }
   }
 }
@@ -69,8 +69,34 @@
 @media(max-width: 850px) {
   .about-container {
     p {
+      padding: 10px 80px 0px 80px !important;
       font-size: 22px;
       overflow: scroll;
+    }
+  }
+}
+
+@media(max-width: 770px) {
+  .about-container {
+    p {
+      font-size: 19px;
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  .about-container {
+    p {
+      padding: 10px 60px 0px 60px !important;
+      font-size: 15px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .about-container {
+    p {
+      padding: 10px 55px 0px 55px !important;
     }
   }
 }

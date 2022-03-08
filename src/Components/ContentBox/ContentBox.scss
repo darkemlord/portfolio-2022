@@ -6,3 +6,12 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width:700px) {
+  .title {
+    margin-bottom: 30px !important;
+    h1 {
+      font-size: 25px !important;
+    }
+  }
+}
