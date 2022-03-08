@@ -19,12 +19,12 @@ body {
   }
 }
 
-@media(max-width: 960px) {
+@media(max-width: 1024px) {
   body {
     &::before {
     content: '';
     position: absolute;
-    background-color: #3b2179;
+    background-color: #2d2354;
     height: 100vh;
     opacity: 40%;
     top: 0;

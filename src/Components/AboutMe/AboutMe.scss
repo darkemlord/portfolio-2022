@@ -57,18 +57,10 @@
   }
 }
 
-@media(max-width: 1024px) {
-  .about-container {
-    p {
-      font-size: 20px;
-    }
-  }
-}
-
 //Responsive mobile
 
 
-@media(max-width: 960px) {
+@media(max-width: 1024px) {
   .about-container {
     p {
       font-size: 25.5px;

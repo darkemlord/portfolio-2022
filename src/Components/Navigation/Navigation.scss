@@ -152,14 +152,9 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .nav-container{
-    width: 100%;
-  }
-}
 //HERE STARTS THE MOBILE VERSION
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .nav-container {
     display: flex;
     flex-direction: column;
@@ -342,9 +337,8 @@
   .nav-container {
     .profile-container {
       .avatar {
-        left: 35px;
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
       }
     }
     .links {
