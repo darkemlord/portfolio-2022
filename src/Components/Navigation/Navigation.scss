@@ -42,20 +42,19 @@
   }
   .links {
     width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     .social {
-      position: absolute;
-      left: 60px;
-      bottom: 10%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: center;
       align-items: center;
-      justify-content: space-evenly;
       .svg-inline--fa{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
         width: 50px;
         height: 50px;
-        margin-top: 30px !important;
         color: $grey;
           &:hover{
             color: $purple;
@@ -71,7 +70,7 @@
       align-items: center;
       justify-content: center;
       .nav-button {
-        height: 4rem !important;
+        height: 3.5rem !important;
         width: 100% !important;
         background-color: transparent;
         border: none;
@@ -166,6 +165,7 @@
   .nav-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     max-height: 100% !important;
     position: relative;
@@ -207,20 +207,13 @@
   }
   }
   .link-navegator {
+    margin-top: 10px !important;
     flex-direction: row !important;
     justify-content: space-between !important;
-    position: relative !important;
-    bottom: 20px !important;
   }
 
   .links {
-      margin-top: 30px !important;
       .social {
-        position: relative !important;
-        left: 0px !important;
-        bottom: 40px !important;
-        flex-direction: row !important;
-        justify-content: center !important;
         .svg-inline--fa{
           width: 50px !important;
           height: 50px !important;
@@ -245,8 +238,6 @@
     }
   }
   .link-navegator {
-      position: relative !important;
-      bottom: 20px !important;
     .nav-button {
       span {
         font-size: 18px !important;
@@ -273,8 +264,6 @@
     }
   }
   .link-navegator {
-    position: relative !important;
-    bottom: 20px !important;
     .nav-button {
       span {
         font-size: 16px !important;
@@ -293,8 +282,6 @@
   }
 
   .link-navegator {
-    position: relative !important;
-    bottom: 20px !important;
     .nav-button {
       span {
         font-size: 14px !important;
@@ -325,8 +312,6 @@
     }
   }
   .link-navegator {
-    position: relative !important;
-    bottom: 20px !important;
     .nav-button {
       span {
         font-size: 14px !important;
@@ -339,6 +324,7 @@
   .profile-container {
     .avatar {
       left: 45px !important;
+      top: 60px !important;
       width: 100px !important;
       height: 100px !important;
     }
@@ -412,14 +398,13 @@
     }
     .links {
       .social {
-        position: relative !important;
-        bottom: 50px !important;
         .svg-inline--fa {
           width: 25px !important;
           height: 25px !important;
         }
       }
       .link-navegator {
+        margin-top: 0px !important;
         .nav-button {
           span {
             font-size: 11px !important;
@@ -449,10 +434,6 @@
             font-size: 10.5px !important;
           }
         }
-      }
-      .social {
-        position: relative !important;
-        bottom: 60px !important;
       }
     }
   }
@@ -485,12 +466,7 @@
       }
     }
     .links {
-      .social {
-        position: relative !important;
-        bottom: 60px !important;
-      }
       .link-navegator {
-        top: -70px !important;
         .nav-button {
           span {
             font-size: 9px !important;
