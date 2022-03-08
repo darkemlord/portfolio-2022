@@ -3,10 +3,11 @@
 .about-container {
   height: 70%;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   flex-direction: column;
   text-align: center;
   p {
+    margin: auto !important;
     padding: 10px 200px 0px 200px !important;
     text-align: center;
     font-size: 28px;
@@ -14,13 +15,62 @@
   .button-download {
     margin: auto !important;
   }
+  .download-container {
+    margin-top: 40px !important;
+    margin-bottom: 30px !important;
+  }
 }
 
 @media(max-width: 1600px) {
   .about-container {
     p {
       padding: 10px 100px 0px 100px !important;
+      font-size: 23px;
+    }
+    .button-download {
+      font-size: 23px;
+      height: 50px;
+    }
+  }
+}
+
+@media(max-width: 1360px) {
+  .about-container {
+    p {
+      font-size: 18px;
+    }
+    .button-download {
+      font-size: 18px;
+      height: 45px;
+      width: 200px;
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .about-container {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+//Responsive mobile
+
+
+@media(max-width: 960px) {
+  .about-container {
+    p {
       font-size: 25px;
+    }
+  }
+}
+
+@media(max-width: 850px) {
+  .about-container {
+    p {
+      font-size: 22px;
+      overflow: scroll;
     }
   }
 }
