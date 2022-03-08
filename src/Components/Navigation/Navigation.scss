@@ -154,7 +154,7 @@
 
 //HERE STARTS THE MOBILE VERSION
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
   .nav-container {
     display: flex;
     flex-direction: column;
@@ -162,18 +162,6 @@
     width: 100%;
     max-height: 100% !important;
     position: relative;
-      &:before {
-      content: '';
-      position: absolute;
-      background-image: url('../../assets/media/Vector_2646.jpg');
-      background-size: 100% 100%;
-      opacity: 50%;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
-    }
     .profile-container {
       flex-direction: row !important;
       justify-content: center !important;
@@ -367,8 +355,8 @@
   .nav-container{
     .profile-container {
       .avatar {
-        top: 30px;
-        left: 20px;
+        width: 70px;
+        height: 70px;
       }
     }
   }
@@ -391,8 +379,8 @@
       }
       .avatar {
         left: 25px;
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
       }
     }
     .links {
