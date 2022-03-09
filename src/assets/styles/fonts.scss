@@ -3,3 +3,13 @@
 
 $bruno: 'Bruno Ace', sans-serif;
 $share: 'Share Tech', sans-serif;
+
+@font-face {
+  font-family: $bruno;
+  src: url('../fonts/BrunoAce-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $share;
+  src: url('../fonts/ShareTech-Regular.ttf') format('truetype');
+}
