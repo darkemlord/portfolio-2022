@@ -1,0 +1,52 @@
+@import '../../index.scss';
+
+.error-modal {
+  position: absolute;
+  width: 50%;
+  margin-left: 25% !important;
+  margin-top: 13% !important;
+  text-align: center;
+  padding: 60px 3px 60px 3px !important;
+  border-radius: 10px;
+  display: none;
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: $grey;
+      border-radius: 10px;
+      opacity: 10%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  .error-container {
+    display: flex;
+    flex-direction: column;
+      &:before {
+      content: '';
+        position: absolute;
+        background-image: url('../../assets/media/stars-star.gif');
+        border-radius: 10px;
+        opacity: 20%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px !important;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (orientation:landscape) and (max-width: 960px){
+  .error-modal {
+    display: block;
+  }
+}
