@@ -3,7 +3,14 @@ import './Skills.scss'
 const Skills = () => {
   return (
     <div>
-      <h1>Sabrosas skills</h1>
+      <div className="skills-container">
+        <div className="skill-type">
+          <h2>Backend</h2>
+          <div className="icons">
+
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
