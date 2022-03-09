@@ -31,3 +31,58 @@
     }
   }
 }
+
+@media (max-width:1200px) {
+  .skills-container {
+    .skill-type-content{
+      .icon-container{
+        i{
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:1020px) {
+  .skills-container {
+    .skill-type-content{
+      .icon-container{
+        i{
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:770px) {
+  .skills-container {
+    .skill-type-content{
+      .skill-title{
+        font-size: 15px;
+      }
+      .icon-container{
+        i{
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:550px) {
+  .skills-container {
+    .skill-type-content{
+      .skill-title {
+        font-size: 10px;
+      }
+      .icon-container{
+        i{
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

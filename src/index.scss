@@ -19,7 +19,7 @@ body {
 
   html {
       /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
+    height: -webkit-fill-available;
   }
   p {
     font-family: $share;
