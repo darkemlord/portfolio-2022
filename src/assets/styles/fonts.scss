@@ -1,15 +1,13 @@
-@import url('http://fonts.cdnfonts.com/css/bruno-ace');
-@import url('http://fonts.cdnfonts.com/css/share-tech');
+
+@font-face {
+  font-family: 'Bruno Ace';
+  src: local('Bruno Ace'), url('../fonts/BrunoAce-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Share Tech';
+  src: local('Share Tech'), url('../fonts/ShareTech-Regular.ttf') format('truetype');
+}
 
 $bruno: 'Bruno Ace', sans-serif;
 $share: 'Share Tech', sans-serif;
-
-@font-face {
-  font-family: $bruno;
-  src: url('../fonts/BrunoAce-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: $share;
-  src: url('../fonts/ShareTech-Regular.ttf') format('truetype');
-}
