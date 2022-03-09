@@ -546,3 +546,9 @@
 
 // SPECIAL SIZES
 //IPHONE OLDER THAN
+
+@media screen and (orientation:landscape) and (max-width: 900px){
+  .nav-container {
+    display: none;
+  }
+}

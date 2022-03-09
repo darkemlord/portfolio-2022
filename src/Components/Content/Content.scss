@@ -49,3 +49,12 @@
     }
   }
 }
+
+
+// SPECIAL QUERIES
+
+@media screen and (orientation:landscape) and (max-width: 900px){
+  .content {
+    display: none;
+  }
+}
