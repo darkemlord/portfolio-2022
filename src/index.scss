@@ -7,7 +7,7 @@
   padding: 0 !important;
 }
 body {
-  min-height: -webkit-fill-available;
+  min-height: 95vh;
   background-color: $black;
   margin: 0;
   h1,h2,h3,h4,h5,h6 {
@@ -16,7 +16,7 @@ body {
   }
 
   html {
-    height: -webkit-fill-available;
+    height: 95vh;
   }
   p {
     font-family: $share;
@@ -32,7 +32,7 @@ body {
     // background-color: #2d2354;
     background-image: url('./assets/media/Vector_2646.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 95vh;
     opacity: 40%;
     top: 0;
     bottom: 0;
