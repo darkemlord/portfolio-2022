@@ -35,10 +35,10 @@ const Navigation = (props) => {
       </div>
       <div className="links">
         <div className="social">
-          <a href="https://www.facebook.com/emanuel.caro.129"><i className="fa-brands fa-facebook icon"></i></a>
-          <a href="https://github.com/darkemlord"><i className="fa-brands fa-github"></i></a>
-          <a href="https://www.instagram.com/emanuelcaro1/"><i className="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/emanuelcaro/"><i className="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/emanuel.caro.129" target='_blank' rel="noreferrer"><i className="fa-brands fa-facebook icon"></i></a>
+          <a href="https://github.com/darkemlord" target='_blank' rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/emanuelcaro1/" target='_blank' rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/emanuelcaro/" target='_blank' rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
         </div>
 
         <div className="link-navegator">
