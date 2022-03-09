@@ -75,3 +75,21 @@
     }
   }
 }
+
+// MOBILE RESPONSIVE
+
+@media(max-width: 1020px) {
+  .projects-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    .project-links {
+      flex-direction: row;
+      .button-project {
+        width: 120px;
+      }
+      h2 {
+        font-size: 12px;
+      }
+    }
+  }
+}
