@@ -1,1 +1,25 @@
 @import '../../index.scss';
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 300px;
+  .skill-type-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    .skill-title {
+      margin-bottom: 40% !important;
+    }
+    .icon-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: $grey;
+      i {
+        font-size: 80px;
+      }
+    }
+  }
+}
