@@ -9,7 +9,7 @@ const user = [
     },
     {
       title: "design",
-      icon:["devicon-figma-plain"]
+      icon:["devicon-figma-plain", "devicon-photoshop-plain"]
     }
 ];
 
