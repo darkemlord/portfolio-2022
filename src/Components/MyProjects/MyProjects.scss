@@ -94,3 +94,51 @@
     }
   }
 }
+
+@media(max-width: 570px) {
+  .projects-container {
+    .project-links {
+      .button-project{
+        width: 67px;
+        height: 20px;
+        padding: 6px 7px 6px 7px !important;
+      }
+      h2 {
+        font-size: 9px;
+      }
+    }
+    .project-card {
+      .project-description {
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 340px) {
+  .projects-container {
+    .project-links {
+      .button-project {
+        width: 60px;
+        padding: 3px 5px 3px 5px !important;
+      }
+      h2 {
+        font-size: 7px;
+      }
+    }
+  }
+}
+
+@media(max-width: 320px) {
+  .projects-container {
+    .project-card {
+      .project-description {
+        p {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
