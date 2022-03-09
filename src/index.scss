@@ -7,11 +7,17 @@
   padding: 0 !important;
 }
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   background-color: $black;
   margin: 0;
   h1,h2,h3,h4,h5,h6 {
     font-family: $bruno;
     color: $grey;
+  }
+
+  html {
+    height: -webkit-fill-available;
   }
   p {
     font-family: $share;
