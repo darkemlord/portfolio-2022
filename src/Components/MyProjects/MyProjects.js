@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './MyProjects.scss'
-import {images, description} from './projectsData'
+import {images, description, urls} from './projectsData'
 
 const MyProjects = () => {
   const [count, setCount] = useState(0);
@@ -8,6 +8,7 @@ const MyProjects = () => {
   const [ fade, setFade ] = useState('fade')
   const [display, setDisplay] = useState(undefined)
   const [displayDesc, setDisplayDesc] = useState(undefined)
+  const [imageUrl, setImageUrl] = useState(undefined)
 
   useEffect(() => {
     if(!isClicked){
@@ -23,12 +24,14 @@ const MyProjects = () => {
     setDisplayDesc(description[0])
     setDisplay(images[0])
     setFade('no-active')
+    setImageUrl(urls[0])
   }
   const handleClickKids = () => {
     setIsClicket(true)
     setDisplayDesc(description[1])
     setDisplay(images[1])
     setFade('no-active')
+     setImageUrl(urls[1])
   }
 
   const handleClickCocktails = () => {
@@ -36,6 +39,7 @@ const MyProjects = () => {
     setDisplayDesc(description[2])
     setDisplay(images[2])
     setFade('no-active')
+     setImageUrl(urls[2])
   }
 
     const handleClickWatch = () => {
@@ -43,6 +47,7 @@ const MyProjects = () => {
     setDisplayDesc(description[3])
     setDisplay(images[3])
     setFade('no-active')
+     setImageUrl(urls[3])
   }
   const imagesAll = images[count % images.length]
   const descriptionsAll = description[count % description.length]
@@ -57,7 +62,7 @@ const MyProjects = () => {
       </div>
       <div className="project-card">
         <div className={`project-image ${fade}`}>
-          <img src={!display ? imagesAll : display} alt="papis lindos" />
+          <a href={imageUrl} target="_blank" rel="noreferrer"><img src={!display ? imagesAll : display} alt="papis lindos" /></a>
         </div>
         <div className={`project-description ${fade}`}>
           <p>{!displayDesc ? descriptionsAll : displayDesc}</p>
