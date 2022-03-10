@@ -27,6 +27,22 @@ body {
   }
 }
 
+
+input:focus,
+input:active {
+   box-shadow: none !important;
+   -moz-box-shadow: none !important;
+   -webkit-box-shadow: none !important;
+   outline: none !important;
+ }
+
+textarea:focus,
+textarea:active {
+   box-shadow: none !important;
+   -moz-box-shadow: none !important;
+   -webkit-box-shadow: none !important;
+   outline: none !important;
+ }
 @media(max-width: 1020px) {
   body {
     &::before {

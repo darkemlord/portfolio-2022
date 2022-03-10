@@ -3,43 +3,130 @@
 .contact-container {
   display: grid;
   grid-template-columns: 100%;
-  border: 2px solid white;
   height: 80%;
   .form-container {
     margin: auto !important;
     height: 80%;
     width: 60%;
-    border: 2px solid white;
     .form {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: space-between;
       input {
         height: 50px;
         border-radius: 30px;
         border: 2px solid $grey;
-        margin-bottom:40px !important;
         background-color: rgba(229, 229, 229,0.3);
+        padding-left: 40px !important;
+        color: $grey;
         &::placeholder {
-          padding: 20px;
           font-family: $share, 'FontAwesome';;
           color: $grey;
         }
       }
       textarea {
         max-height: 100%;
-        height: 100px;
-        border-radius: 10px;
+        height: 40%;
+        border-radius: 30px;
         border: 2px solid $grey;
+        padding-top: 30px !important;
+        padding-left: 40px !important;
         background-color: rgba(229, 229, 229,0.3);
+        color: $grey;
+        resize: none;
         &::placeholder {
           font-family: $share, 'FontAwesome';
-          padding: 20px;
           color: $grey;
         }
       }
     }
   }
 
+}
+
+
+@media(max-width: 1200px) {
+  .contact-container {
+    .form-container {
+      .form {
+        input {
+          height: 40px;
+        }
+        textarea {
+          height: 35%;
+        }
+        .button-contact {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .contact-container {
+    .form-container {
+      width: 70%;
+      .form {
+        input {
+          height: 40px;
+          padding-left: 20px !important;
+        }
+        textarea {
+          height: 35%;
+          padding-left: 20px !important;
+        }
+        .button-contact {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .contact-container {
+    .form-container {
+      width: 80%;
+      .form {
+        input {
+          height: 30px;
+          padding-left: 20px !important;
+        }
+        textarea {
+          height: 30%;
+          padding-left: 20px !important;
+        }
+        .button-contact {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 320px) {
+  .contact-container {
+    .form-container {
+      width: 80%;
+      .form {
+        input {
+          height: 20px;
+          padding-left: 20px !important;
+          font-size: 12px;
+        }
+        textarea {
+          height: 30%;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          padding-top: 10px !important;
+        }
+        .button-contact {
+          height: 20px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
