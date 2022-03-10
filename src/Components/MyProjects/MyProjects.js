@@ -62,7 +62,7 @@ const MyProjects = () => {
       </div>
       <div className="project-card">
         <div className={`project-image ${fade}`}>
-          <a href={imageUrl} target="_blank" rel="noreferrer"><img src={!display ? imagesAll : display} alt="papis lindos" /></a>
+          <a href={imageUrl} target="_blank" rel="noreferrer"><img src={!display ? imagesAll : display} alt="no available" /></a>
         </div>
         <div className={`project-description ${fade}`}>
           <p>{!displayDesc ? descriptionsAll : displayDesc}</p>
