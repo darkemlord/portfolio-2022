@@ -17,7 +17,7 @@ const MyProjects = () => {
       }, 7000);
       return () => clearInterval(timerId)
     }
-  }, [isClicked])
+  }, [isClicked, count])
 
   const handleClickRaibuon = () => {
     setIsClicket(true)
