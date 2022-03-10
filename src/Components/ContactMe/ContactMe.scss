@@ -1,1 +1,45 @@
-@import '../../index.scss'
+@import '../../index.scss';
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 100%;
+  border: 2px solid white;
+  height: 80%;
+  .form-container {
+    margin: auto !important;
+    height: 80%;
+    width: 60%;
+    border: 2px solid white;
+    .form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      input {
+        height: 50px;
+        border-radius: 30px;
+        border: 2px solid $grey;
+        margin-bottom:40px !important;
+        background-color: rgba(229, 229, 229,0.3);
+        &::placeholder {
+          padding: 20px;
+          font-family: $share, 'FontAwesome';;
+          color: $grey;
+        }
+      }
+      textarea {
+        max-height: 100%;
+        height: 100px;
+        border-radius: 10px;
+        border: 2px solid $grey;
+        background-color: rgba(229, 229, 229,0.3);
+        &::placeholder {
+          font-family: $share, 'FontAwesome';
+          padding: 20px;
+          color: $grey;
+        }
+      }
+    }
+  }
+
+}
