@@ -98,8 +98,9 @@
 @media(max-width: 570px) {
   .projects-container {
     .project-links {
+      width: 99%;
       .button-project{
-        padding: 6px 7px 6px 7px !important;
+        padding: 6px 5px 6px 5px !important;
       }
       h2 {
         font-size: 15px;
@@ -119,7 +120,7 @@
   .projects-container {
     .project-links {
       .button-project{
-        padding: 6px 7px 6px 7px !important;
+        padding: 6px 5px 6px 5px !important;
       }
       h2 {
         font-size: 13px;
