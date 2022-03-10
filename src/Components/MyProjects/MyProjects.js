@@ -1,9 +1,24 @@
+import { useEffect, useState } from 'react'
 import './MyProjects.scss'
-import kids from '../../assets/media/raibuon.png'
+import {images, description} from './projectsData'
 
-console.log(kids)
+console.log(description)
+console.log(images)
+
 
 const MyProjects = () => {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setCount((count) => count + 1)
+    }, 10000);
+    return () => clearInterval(timerId)
+  }, [])
+
+  const imagesAll = images[count % images.length]
+  const descriptionsAll = description[count % description.length]
+
   return (
     <div className="projects-container">
       <div className="project-links">
@@ -13,11 +28,11 @@ const MyProjects = () => {
         <button className="button-project"><h2>Watch</h2></button>
       </div>
       <div className="project-card">
-        <div className="project-image">
-          <img src={kids} alt="papis lindos" />
+        <div className="project-image fade">
+          <img src={imagesAll} alt="papis lindos" />
         </div>
-        <div className="project-description">
-          <p>"Raibuon is an application designed to facilitate the tipping process of street musicians, through the app you can promote your performance as an artist and also the places where street artists from all over Japan are now playing live. My role in the app was lead developer so I have been taking care of the back-end as well as the front-end, the app is still developing to become a useful product for the artists."</p>
+        <div className="project-description fade">
+          <p>{descriptionsAll}</p>
         </div>
       </div>
     </div>

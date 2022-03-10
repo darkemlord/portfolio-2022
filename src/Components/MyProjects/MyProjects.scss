@@ -23,7 +23,7 @@
     .project-image {
       border-radius: 10px;
       height: 35%;
-      width: 65%;
+      width: 60%;
       margin-bottom: 25px !important;
       img {
         border-radius: 10px;
@@ -141,4 +141,15 @@
       }
     }
   }
+}
+
+
+.fade {
+  animation: fadeInout 10s ease-in-out infinite;
+}
+
+@keyframes fadeInout {
+  0% { opacity: 0;}
+  10% { opacity: 1;}
+  90% { opacity: 1;}
 }
