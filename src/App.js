@@ -8,7 +8,7 @@ import { RingLoader } from 'react-spinners'
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const [title, setTitle] = useState('About me');
+  const [title, setTitle] = useState('Skills');
 
   //This useEffect is counting 8 seconds to charge a loading component while the website upload
 
@@ -16,7 +16,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false)
-    }, 6000);
+    }, 2000);
   }, [])
 
   return (
