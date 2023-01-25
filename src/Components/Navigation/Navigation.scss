@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 .nav-container {
   height: 100vh;
@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .name-container{
+    .name-container {
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -19,8 +19,8 @@
         display: flex;
         flex-direction: column;
         h3 {
-        margin-top: 10px !important;
-        font-size: 20px;
+          margin-top: 10px !important;
+          font-size: 20px;
         }
       }
     }
@@ -30,7 +30,7 @@
       border-radius: 50%;
       overflow: hidden;
       box-shadow: 2px 1px 0 rgb(255, 255, 255, 0.3);
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -49,21 +49,21 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      .svg-inline--fa{
+      .svg-inline--fa {
         margin-left: 10px !important;
         margin-right: 10px !important;
         width: 50px;
         height: 50px;
         color: $grey;
-          &:hover{
-            color: $purple;
+        &:hover {
+          color: $purple;
         }
       }
-      .fa-martini-glass-citrus{
-    color: white;
-  }
-}
-    .link-navegator {
+      .fa-martini-glass-citrus {
+        color: white;
+      }
+    }
+    .link-navigator {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -79,11 +79,15 @@
         color: $grey;
         font-family: $bruno;
         font-size: 30px;
-          &:hover {
-            border-radius: 30px;
-            background: radial-gradient(circle, rgba(215,166,255,0.3) 0%, rgba(229,229,229,0.1) 100%);
-            padding: 20px !important;
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        &:hover {
+          border-radius: 30px;
+          background: radial-gradient(
+            circle,
+            rgba(215, 166, 255, 0.3) 0%,
+            rgba(229, 229, 229, 0.1) 100%
+          );
+          padding: 20px !important;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
       }
     }
@@ -91,8 +95,8 @@
 }
 
 @media (max-width: 1600px) {
-  .profile-container{
-    .name-container{
+  .profile-container {
+    .name-container {
       h1 {
         font-size: 23px !important;
       }
@@ -102,10 +106,9 @@
         }
       }
     }
-
   }
-  .links{
-    .social{
+  .links {
+    .social {
       left: 30px !important;
       bottom: 12% !important;
       .svg-inline--fa {
@@ -113,7 +116,7 @@
         height: 30px !important;
       }
     }
-    .link-navegator{
+    .link-navigator {
       span {
         font-size: 23px !important;
       }
@@ -121,10 +124,9 @@
   }
 }
 
-
 @media (max-width: 1200px) {
   .nav-container {
-    h1{
+    h1 {
       font-size: 30px !important;
     }
     .avatar {
@@ -135,8 +137,8 @@
       font-size: 25px !important;
     }
   }
-  .links{
-    .social{
+  .links {
+    .social {
       left: 30px !important;
       bottom: 8% !important;
       .svg-inline--fa {
@@ -144,7 +146,7 @@
         height: 30px !important;
       }
     }
-    .link-navegator{
+    .link-navigator {
       span {
         font-size: 23px !important;
       }
@@ -168,40 +170,40 @@
       .avatar {
         width: 170px;
         height: 170px;
+      }
     }
-  }
-  .name-container {
-    flex-direction: row !important;
-    width: 100%;
-    justify-content: space-evenly !important;
-    h1 {
-      text-align: center;
-      font-size: 30px !important;
-    }
-    .dev-cont {
-      margin-left: 15px !important;
-      h3 {
-        font-size: 15px !important;
-        text-align: left !important;
+    .name-container {
+      flex-direction: row !important;
+      width: 100%;
+      justify-content: space-evenly !important;
+      h1 {
+        text-align: center;
+        font-size: 30px !important;
+      }
+      .dev-cont {
+        margin-left: 15px !important;
+        h3 {
+          font-size: 15px !important;
+          text-align: left !important;
+        }
       }
     }
   }
-  }
-  .link-navegator {
+  .link-navigator {
     margin-top: 10px !important;
     flex-direction: row !important;
     justify-content: space-between !important;
   }
 
   .links {
-      .social {
-        .svg-inline--fa{
-          width: 50px !important;
-          height: 50px !important;
-          margin: 8px 8px 8px 8px !important;
-        }
+    .social {
+      .svg-inline--fa {
+        width: 50px !important;
+        height: 50px !important;
+        margin: 8px 8px 8px 8px !important;
+      }
     }
-    .link-navegator {
+    .link-navigator {
       span {
         font-size: 20px !important;
         &:hover {
@@ -212,17 +214,17 @@
   }
 }
 
-@media  (max-width: 770px) {
+@media (max-width: 770px) {
   .nav-container {
     .profile-container {
       .avatar {
         width: 130px;
         height: 130px;
       }
+    }
   }
-}
 
-  .link-navegator {
+  .link-navigator {
     .nav-button {
       span {
         font-size: 18px !important;
@@ -231,7 +233,7 @@
   }
 }
 
-@media  (max-width: 700px) {
+@media (max-width: 700px) {
   .profile-container {
     .name-container {
       h1 {
@@ -241,14 +243,14 @@
   }
 
   .links {
-    .social{
+    .social {
       .svg-inline--fa {
         width: 40px !important;
         height: 40px !important;
       }
     }
   }
-  .link-navegator {
+  .link-navigator {
     .nav-button {
       span {
         font-size: 16px !important;
@@ -266,7 +268,7 @@
     }
   }
 
-  .link-navegator {
+  .link-navigator {
     .nav-button {
       span {
         font-size: 14px !important;
@@ -288,7 +290,7 @@
     display: flex !important;
     flex-direction: column;
     justify-content: flex-start;
-    .social{
+    .social {
       margin-bottom: 0px !important;
       .svg-inline--fa {
         width: 37px !important;
@@ -296,7 +298,7 @@
       }
     }
   }
-  .link-navegator {
+  .link-navigator {
     .nav-button {
       span {
         font-size: 14px !important;
@@ -315,7 +317,7 @@
     }
   }
   .links {
-    .link-navegator {
+    .link-navigator {
       bottom: 30px !important;
     }
   }
@@ -330,7 +332,7 @@
       }
     }
     .links {
-      .link-navegator {
+      .link-navigator {
         bottom: 40px !important;
         .nav-button {
           span {
@@ -352,7 +354,7 @@
 }
 
 @media (max-width: 500px) {
-  .nav-container{
+  .nav-container {
     .profile-container {
       .avatar {
         width: 70px;
@@ -390,7 +392,7 @@
           height: 25px !important;
         }
       }
-      .link-navegator {
+      .link-navigator {
         margin-top: 0px !important;
         .nav-button {
           span {
@@ -402,8 +404,8 @@
   }
 }
 
-@media(max-width: 400px) {
-  .nav-container{
+@media (max-width: 400px) {
+  .nav-container {
     .profile-container {
       .avatar {
         width: 50px;
@@ -411,7 +413,7 @@
       }
     }
     .links {
-      .link-navegator {
+      .link-navigator {
         bottom: 60px !important;
         justify-content: center !important;
         .nav-button {
@@ -426,15 +428,15 @@
   }
 }
 
-@media(max-width: 380px) {
-  .nav-container{
+@media (max-width: 380px) {
+  .nav-container {
     .profile-container {
       .avatar {
         top: 30px;
       }
     }
     .links {
-      .link-navegator {
+      .link-navigator {
         .nav-button {
           span {
             font-size: 10px !important;
@@ -445,8 +447,8 @@
   }
 }
 
-@media(max-width: 370px) {
-  .nav-container{
+@media (max-width: 370px) {
+  .nav-container {
     .profile-container {
       .avatar {
         height: 60px;
@@ -454,7 +456,7 @@
       }
     }
     .links {
-      .link-navegator {
+      .link-navigator {
         .nav-button {
           span {
             font-size: 9px !important;
@@ -465,10 +467,10 @@
   }
 }
 
-@media(max-width: 345px) {
-  .nav-container{
+@media (max-width: 345px) {
+  .nav-container {
     .links {
-      .link-navegator {
+      .link-navigator {
         .nav-button {
           span {
             font-size: 8.5px !important;
@@ -482,7 +484,7 @@
 @media (max-width: 325px) {
   .nav-container {
     .profile-container {
-      .name-container{
+      .name-container {
         margin-top: 20px !important;
         margin-bottom: 0 !important;
         h1 {
@@ -507,7 +509,7 @@
           height: 20px !important;
         }
       }
-      .link-navegator {
+      .link-navigator {
         .nav-button {
           height: 2rem !important;
           span {
@@ -547,7 +549,7 @@
 // SPECIAL SIZES
 //IPHONE OLDER THAN
 
-@media screen and (orientation:landscape) and (max-width: 960px){
+@media screen and (orientation: landscape) and (max-width: 960px) {
   .nav-container {
     display: none;
   }
