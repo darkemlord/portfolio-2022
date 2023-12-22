@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 .projects-container {
   margin-left: 80px !important;
@@ -42,8 +42,8 @@
     }
   }
 }
-@media(max-width: 1450px) {
-  .projects-container{
+@media (max-width: 1450px) {
+  .projects-container {
     .project-card {
       .project-description {
         p {
@@ -54,12 +54,12 @@
   }
 }
 
-@media(max-width: 1200px) {
-  .projects-container{
+@media (max-width: 1200px) {
+  .projects-container {
     margin-left: 40px !important;
     margin-right: 40px !important;
     .project-links {
-      .button-project{
+      .button-project {
         width: 150px;
       }
       h2 {
@@ -67,8 +67,8 @@
       }
     }
     .project-card {
-      .project-description{
-        p{
+      .project-description {
+        p {
           font-size: 21px;
         }
       }
@@ -78,7 +78,7 @@
 
 // MOBILE RESPONSIVE
 
-@media(max-width: 1020px) {
+@media (max-width: 1020px) {
   .projects-container {
     grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
@@ -95,11 +95,11 @@
   }
 }
 
-@media(max-width: 570px) {
+@media (max-width: 570px) {
   .projects-container {
     .project-links {
       width: 99%;
-      .button-project{
+      .button-project {
         padding: 6px 5px 6px 5px !important;
       }
       h2 {
@@ -116,10 +116,10 @@
   }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .projects-container {
     .project-links {
-      .button-project{
+      .button-project {
         padding: 6px 5px 6px 5px !important;
       }
       h2 {
@@ -136,7 +136,7 @@
   }
 }
 
-@media(max-width: 340px) {
+@media (max-width: 340px) {
   .projects-container {
     .project-links {
       .button-project {
@@ -150,7 +150,7 @@
   }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   .projects-container {
     .project-card {
       .project-description {
@@ -160,47 +160,4 @@
       }
     }
   }
-}
-
-
-.fade {
-  animation: fadeInout 7s ease-in-out infinite;
-}
-.no-active {
-  animation: fadeIn 3s;
-  -webkit-animation: fadeIn 3s;
-  -moz-animation: fadeIn 3s;
-  -o-animation: fadeIn 3s;
-  -ms-animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@keyframes fadeInout {
-  0% { opacity: 0;}
-  10% { opacity: 1;}
-  90% { opacity: 1;}
 }

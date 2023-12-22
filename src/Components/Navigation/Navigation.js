@@ -1,24 +1,39 @@
 import "./Navigation.scss";
 import emanuel from "../../assets/media/emanuel-avatar.png";
 
+export const NAVIGATION_SECTIONS = {
+  aboutMe: "About Me",
+  skills: "Skills",
+  myExperience: "My Experience",
+  contactMe: "Contact me",
+};
+
 const Navigation = (props) => {
   const { titleChange } = props;
 
-  const handleAboutClick = () => {
-    titleChange("About Me");
+  const handleTitleChange = (urlParam) => {
+    titleChange(urlParam);
   };
 
-  const handleSkillClick = () => {
-    titleChange("Skills");
-  };
+  const navigationSections = [
+    {
+      title: NAVIGATION_SECTIONS.aboutMe,
+      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.aboutMe),
+    },
+    {
+      title: NAVIGATION_SECTIONS.skills,
+      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.skills),
+    },
+    {
+      title: NAVIGATION_SECTIONS.myExperience,
+      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.myExperience),
+    },
+    {
+      title: NAVIGATION_SECTIONS.contactMe,
+      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.contactMe),
+    },
+  ];
 
-  const handleProjectsClick = () => {
-    titleChange("My Projects");
-  };
-
-  const handleContactMe = () => {
-    titleChange("Contact Me");
-  };
   return (
     <div className="nav-container">
       <div className="profile-container">
@@ -65,18 +80,15 @@ const Navigation = (props) => {
         </div>
 
         <div className="link-navigator">
-          <button onClick={handleAboutClick} className="nav-button">
-            <span>About Me</span>
-          </button>
-          <button onClick={handleSkillClick} className="nav-button">
-            <span>Skills</span>
-          </button>
-          <button onClick={handleProjectsClick} className="nav-button">
-            <span>My projects</span>
-          </button>
-          <button onClick={handleContactMe} className="nav-button">
-            <span>Contact Me</span>
-          </button>
+          {navigationSections.map((section) => (
+            <button
+              key={section.title}
+              className="nav-button"
+              onClick={section.handleClick}
+            >
+              <span>{section.title}</span>
+            </button>
+          ))}
         </div>
       </div>
     </div>
