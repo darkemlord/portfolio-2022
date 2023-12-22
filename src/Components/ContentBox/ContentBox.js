@@ -13,7 +13,6 @@ import {
 const ContentBox = () => {
   const [params] = useSearchParams();
   const currentView = params.get("view");
-  console.log("🚀currentView:", currentView);
 
   const currentViewMap = {
     [NAVIGATION_PARAMS.aboutMe]: <AboutMe />,
