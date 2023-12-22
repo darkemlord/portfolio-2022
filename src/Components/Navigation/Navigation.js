@@ -1,5 +1,6 @@
 import "./Navigation.scss";
 import emanuel from "../../assets/media/emanuel-avatar.png";
+import { useNavigate, createSearchParams } from "react-router-dom";
 
 export const NAVIGATION_SECTIONS = {
   aboutMe: "About Me",
@@ -8,29 +9,43 @@ export const NAVIGATION_SECTIONS = {
   contactMe: "Contact me",
 };
 
+export const NAVIGATION_PARAMS = {
+  aboutMe: "about",
+  skills: "skills",
+  myExperience: "experience",
+  contactMe: "contact",
+};
+
 const Navigation = (props) => {
   const { titleChange } = props;
+  const navigate = useNavigate();
 
   const handleTitleChange = (urlParam) => {
     titleChange(urlParam);
+    navigate({
+      pathname: "/",
+      search: createSearchParams({
+        view: urlParam,
+      }).toString(),
+    });
   };
 
   const navigationSections = [
     {
       title: NAVIGATION_SECTIONS.aboutMe,
-      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.aboutMe),
+      handleClick: () => handleTitleChange(NAVIGATION_PARAMS.aboutMe),
     },
     {
       title: NAVIGATION_SECTIONS.skills,
-      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.skills),
+      handleClick: () => handleTitleChange(NAVIGATION_PARAMS.skills),
     },
     {
       title: NAVIGATION_SECTIONS.myExperience,
-      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.myExperience),
+      handleClick: () => handleTitleChange(NAVIGATION_PARAMS.myExperience),
     },
     {
       title: NAVIGATION_SECTIONS.contactMe,
-      handleClick: () => handleTitleChange(NAVIGATION_SECTIONS.contactMe),
+      handleClick: () => handleTitleChange(NAVIGATION_PARAMS.contactMe),
     },
   ];
 
