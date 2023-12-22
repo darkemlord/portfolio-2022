@@ -16,12 +16,10 @@ export const NAVIGATION_PARAMS = {
   contactMe: "contact",
 };
 
-const Navigation = (props) => {
-  const { titleChange } = props;
+const Navigation = () => {
   const navigate = useNavigate();
 
   const handleTitleChange = (urlParam) => {
-    titleChange(urlParam);
     navigate({
       pathname: "/",
       search: createSearchParams({
