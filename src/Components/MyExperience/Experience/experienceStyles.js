@@ -14,3 +14,9 @@ export const infoContainer = {
 export const title = {
   textAlign: "center",
 };
+
+export const titleSection = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+};
