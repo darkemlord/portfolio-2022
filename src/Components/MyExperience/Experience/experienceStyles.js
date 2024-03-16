@@ -3,6 +3,8 @@ export const experienceContainer = {
   color: "#ffffff",
   fontFamily: "Bruno Ace",
   width: "100%",
+  flexDirection: "column",
+  gap: 16,
 };
 
 export const infoContainer = {
